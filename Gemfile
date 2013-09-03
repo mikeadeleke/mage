@@ -6,6 +6,7 @@ gem 'progress_bar'
 gem 'sunspot_solr' 
 gem 'aws-sdk'
 gem 'imgkit'
+gem 'rails_12factor', group: :production
 # gem 'screencap'
 # gem "phantomjs.rb", "~> 0.0.5"
 
@@ -26,7 +27,6 @@ group :assets do
 end
 
 group :development do
-	gem 'sqlite3'
   gem 'rspec-rails', '2.11.0'
 end
 
