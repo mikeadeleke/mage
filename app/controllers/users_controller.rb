@@ -11,7 +11,6 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(params[:user])
-		
 		if @user.save
 			sign_in @user
 			flash[:success] = "Woohoo! Thanks for creating an account. Feel free to edit your profile or look around elsewhere!"
