@@ -3,9 +3,6 @@
 		<div class="span12 page-header">
 			<img src="<%= @resource.avatar.url %>">
 			<h1 class="resource-title"><span><%= @resource.name %></span> by <%= @resource.author %></h1>
-			<div class="breadcrumbs">
-				<a href="/<%= @classification.path %>"><%= @classification.name %></a> > <a href="<%= @craft.full_path %>"><%= @craft.name %></a> > <%= @resource.name %>
-			</div>
 			<% if @contributor %>
 				<div class="contributed-by">
 					<span>Contributed by <%= link_to @contributor.username, user_path(@contributor.username) %></span>
@@ -16,7 +13,7 @@
 	</div>
 	<div class="row-fluid">
 		<div class="span12 resource-controls">
-			<a href="<%= @resource.link %>" target="_blank" class="nav-link resource-upvote link-purple fontawesome-external-link">Go to Resource</a>
+			<a href="<%= @resource.link %>" target="_blank" class="nav-link resource-upvote link-purple fontawesome-external-link">Go to Product</a>
 			<%= render 'resources/recommend' %>
 		</div>
 	</div>
@@ -24,9 +21,6 @@
 		<div class="span5">
 			<div class="white-container-no-padding resource-description">
 				<h3>Description</h3>
-				<div class="type-level">
-					<span><%= @resource.type.name %></span><span><%= @resource.level.name %></span>
-				</div>
 				<div class="user-stuff-container">
 					<p><%= @resource.description %></p>
 				</div>
@@ -39,14 +33,14 @@
 						<span class="recommended">You are commenting as <%= current_user.username %>.</span>
 					<% end %>
 				<% else %>
-					<span class="recommended">Sign in to leave feedback on this resource.</span>
+					<span class="recommended">Sign in to leave feedback on this product.</span>
 				<% end %>
 			</div>
 		</div>
 		<div class="span7 resource-right">
 			<div class="white-container-no-padding resource-recommenders p-padding">
 				<h3>Recommenders</h3>
-				<p>Mages who have found this resource useful.</p>
+				<p>Edopters who have found this resource useful.</p>
 				<div class="upvoted-by">
 					<%= render 'resources/recommenders' %>
 				</div>
@@ -65,7 +59,7 @@
 				<% else %>
 					<div class="resource-comment">
 						<a href="#" class="resource-empty"><img src="https://s3.amazonaws.com/mage_images/placeholders/eloquent.jpg"></a>
-						<p class="empty-help">Use the feedback box to the left to leave the first comment for this resource!</p>
+						<p class="empty-help">Use the feedback box to the left to leave the first comment for this product!</p>
 					</div>
 				<% end %>
 			</div>

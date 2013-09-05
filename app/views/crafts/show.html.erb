@@ -14,16 +14,15 @@
 			<p><%= @craft.short_description %></p>
 		</div>
 		<div class="span7	resource-right white-container">
-			<h3>Top Resources</h3>
-			<p>The top <%= @craft.name %> learning resources as voted by our mages.</p>
+			<h3>Top Products</h3>
 			<% @resources.each_with_index do |resource, i| %>
 				<a class="craft-resource" href="<%= resource.full_path %>">
 					<div class="craft-resource-image">
 						<img src="<%= resource.avatar.url %>">
 					</div>
 					<div class="craft-resource-content">
-						<h4><%= (i + 1) %>) <%= resource.name %></h4>
-						<span><%= resource.type.name %> for <%= resource.level.name %> Mages</span>
+						<h4> <%= resource.name %></h4>
+						
 						<p><%= resource.description %></p>
 					</div>
 				</a>

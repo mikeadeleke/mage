@@ -17,8 +17,6 @@ class Resource < ActiveRecord::Base
 	validates :description, presence: true
 	validates :author, presence: true
 	validates :link, presence: true
-	validates :craft_id, presence: true
-	validates :level_id, presence: true
 	validates :avatar, presence: true
 
 	scope :home_list, -> { order("upvotes_count DESC").limit(6) }
@@ -29,8 +27,6 @@ class Resource < ActiveRecord::Base
 			text :name, :default_boost => 2
 			text :description
 			text :author
-			text :level
-			text :type
 		end
 	end
 end

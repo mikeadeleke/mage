@@ -1,49 +1,31 @@
 
 	<div class="row-fluid">
 		<div class="span12 page-header">
-			<h1>Add a Learning Resource</h1>
+			<h1>Add a new Product</h1>
 		</div>
 	</div>
 	<div class="row-fluid">
 		<div class="span5 form-container">
 			<%= form_for @resource, :url => resources_url, :method => "post" do |form| %>
 				<div class="form-input control-group">
-					<%= label_tag "name", "Resource Name", :class  => "control-label" %>
+					<%= label_tag "name", "Product Name", :class  => "control-label" %>
 					<div class="controls">
 						<%= form.text_field :name, { :placeholder => "Name of Resource", :class => "form-text-input", :required => "true" } %>
 						<span class="no">What'cha call it?</span>
 					</div>
 				</div>
 				<div class="form-input control-group">
-					<%= label_tag "author", "Author/Company", :class  => "control-label" %>
+					<%= label_tag "author", "Company", :class  => "control-label" %>
 					<div class="controls">
 						<%= form.text_field :author, { :placeholder => "Author of Resource", :class => "form-text-input", :required => "true" } %>
-						<span class="no">Be it an individual or company!</span>
+						<span class="no">Who's the awesome company!</span>
 					</div>
 				</div>
 				<div class="form-input control-group">
-					<%= label_tag "link", "Resource URL", :class  => "control-label" %>
+					<%= label_tag "link", "Company URL", :class  => "control-label" %>
 					<div class="controls">
 						<%= form.url_field :link, { :placeholder => "Resource URL", :class => "form-text-input", :required => "true" } %>
 						<span class="no">Help us find it!</span>
-					</div>
-				</div>
-				<div class="form-input control-group">
-					<%= label_tag "craft", "Choose Craft", :class  => "control-label", :required => "true" %>
-					<div class="controls">
-						<%= form.collection_select :craft_id, Craft.all, :id, :name, :prompt => 'Select Craft' %>
-					</div>
-				</div>
-				<div class="form-input control-group">
-					<%= label_tag "level", "Skill Level", :class  => "control-label", :required => "true" %>
-					<div class="controls">
-						<%= form.collection_select :level_id, Level.all, :id, :name, :prompt => 'Select Level' %>
-					</div>
-				</div>
-				<div class="form-input control-group">
-					<%= label_tag "type", "Resource Type", :class  => "control-label", :required => "true" %>
-					<div class="controls">
-						<%= form.collection_select :type_id, Type.all, :id, :name, :prompt => 'Select Type' %>
 					</div>
 				</div>
 				<div class="form-input control-group">

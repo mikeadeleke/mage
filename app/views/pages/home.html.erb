@@ -8,14 +8,14 @@
 			<div class="span6">
 				<div class="creation-panel-container">
 					<div class="creation-panel">
-						<a class="nav-link link-gold creation-panel-link entypo-plus" href="/resources/new">Add a Resource</a><a href="/bundles/new" class="nav-link link-purple creation-panel-link entypo-docs">Make a Bundle</a>
+						<a class="nav-link link-gold creation-panel-link entypo-plus" href="/resources/new">Add a Product</a><a href="/bundles/new" class="nav-link link-purple creation-panel-link entypo-docs">Make a Bundle</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row-fluid">
 			<div class="span4 home-feed">
-				<h2 class="add">Recently submitted by mages you follow:</h2>
+				<h2 class="add">Recently submitted by Edopters you follow:</h2>
 				<div class="feed-container">
 					<% if !@recent_resources.empty? %>
 						<% @recent_resources.each do |resource| %>
@@ -23,7 +23,7 @@
 						<% end %>
 					<% else %>
 						<a href="#" class="resource-empty"><img src="https://s3.amazonaws.com/mage_images/placeholders/eloquent.jpg"></a>
-						<p class="empty-help">Follow other mages to see new resources they've added!</p>
+						<p class="empty-help">Follow other Edopters to see new products they've added!</p>
 					<% end %>
 				</div>
 				<div class="feed-container">
@@ -43,12 +43,12 @@
 						<% end %>
 					<% else %>
 						<a href="#" class="resource-empty"><img src="https://s3.amazonaws.com/mage_images/placeholders/eloquent.jpg"></a>
-						<p class="empty-help">Follow other mages to see new bundles they've added!</p>
+						<p class="empty-help">Follow other Edopters to see new bundles they've added!</p>
 					<% end %>
 				</div>
 			</div>
 			<div class="span4 home-feed">
-				<h2 class="recommend">Recently recommended by mages you follow:</h2>
+				<h2 class="recommend">Recently recommended by Edopters you follow:</h2>
 				<div class="feed-container">
 					<% if !@recommended_resources.empty? %>
 						<% @recommended_resources.each do |resource| %>
@@ -56,7 +56,7 @@
 						<% end %>
 					<% else %>
 						<a href="#" class="resource-empty"><img src="https://s3.amazonaws.com/mage_images/placeholders/eloquent.jpg"></a>
-						<p class="empty-help">Follow other mages to see new resources they've recommended!</p>
+						<p class="empty-help">Follow other Edopters to see new products they've recommended!</p>
 					<% end %>
 				</div>
 				<div class="feed-container">
@@ -76,12 +76,12 @@
 						<% end %>
 					<% else %>
 						<a href="#" class="resource-empty"><img src="https://s3.amazonaws.com/mage_images/placeholders/eloquent.jpg"></a>
-						<p class="empty-help">Follow other mages to see new bundles they've recommended!</p>
+						<p class="empty-help">Follow other Edopters to see new bundles they've recommended!</p>
 					<% end %>
 				</div>
 			</div>
 			<div class="span4 home-feed">
-				<h2 class="comment">Recently commented by mages you follow:</h2>
+				<h2 class="comment">Recently commented on by Edopters you follow:</h2>
 				<div class="feed-container">
 					<% if !@commented_resources.empty? %>
 						<% @commented_resources.each do |resource| %>
@@ -89,7 +89,7 @@
 						<% end %>
 					<% else %>
 						<a href="#" class="resource-empty"><img src="https://s3.amazonaws.com/mage_images/placeholders/eloquent.jpg"></a>
-						<p class="empty-help">Follow other mages to see resources they've commented on!</p>
+						<p class="empty-help">Follow other Edopters to see products they've commented on!</p>
 					<% end %>
 				</div>
 				<div class="feed-container">
@@ -109,7 +109,7 @@
 						<% end %>
 					<% else %>
 						<a href="#" class="resource-empty"><img src="https://s3.amazonaws.com/mage_images/placeholders/eloquent.jpg"></a>
-						<p class="empty-help">Follow other mages to see new bundles they've commented on!</p>
+						<p class="empty-help">Follow other Edopters to see new bundles they've commented on!</p>
 					<% end %>
 				</div>
 			</div>
@@ -117,7 +117,7 @@
 		<% else %>
 		<div class="row-fluid">
 			<div class="span6 user-feed">
-				<h1 class="home-title">Learning is Magical</h1>
+				<h1 class="home-title">Startups are awesome.</h1>
 				<p>Learning can be difficult without the right resources in place to guide you along the way. Mage helps you find these valuable resources for your desired area of learning. Sign up and start sharing with others the resources that have helped you master a particular skill.</p>
 			</div>
 			<div class="span6">
@@ -129,7 +129,7 @@
 	<section class="home-content">
 		<div class="row-fluid">
 			<div class="span12 subhead">
-				<h2>Top Resources / <span>This week's top resources</h2>
+				<h2>Top Products / <span>This week's top products</h2>
 			</div>
 		</div>
 		<div class="row-fluid">
@@ -146,7 +146,7 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span12 subhead">
-				<h2>Top Crafts / <span>This week's top areas of learning</span></h2>
+				<h2>Top Cats / <span>This week's top categories of discovery</span></h2>
 			</div>
 		</div>
 		<div class="row-fluid">
@@ -162,7 +162,7 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span12 subhead">
-				<h2>Top Mages / <span>This week's top sharers</span></h2>
+				<h2>Top Edopters / <span>This week's top sharers</span></h2>
 			</div>
 		</div>
 		<div class="row-fluid">

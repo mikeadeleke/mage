@@ -1,4 +1,4 @@
-<span class="recommended">Followed by <%= @user.followers.count %> mages</span>
+<span class="recommended">Followed by <%= @user.followers.count %> Edopters</span>
 <div class="connection-container">
   <% @user.followers.each do |follower| %>
     <a href="<%= user_url(follower.username) %>">

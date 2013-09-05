@@ -6,7 +6,7 @@
 </div>
 <div class="row-fluid">
 	<div class="span6 white-container">
-		<h3>Related Crafts</h3>
+		<h3>Related Categories</h3>
 		<% @crafts.each do |craft| %>
 			<a class="craft-resource" href="<%= craft.full_path %>">
 				<div class="craft-resource-image">
@@ -20,7 +20,7 @@
 		<% end %>
 	</div>
 	<div class="span6 white-container">
-		<h3>Top Resources</h3>
+		<h3>Top Products</h3>
 		<% @resources.each_with_index do |resource, i| %>
 			<a class="craft-resource" href="<%= resource.full_path %>">
 				<div class="craft-resource-image">
@@ -28,7 +28,6 @@
 				</div>
 				<div class="craft-resource-content">
 					<h4><%= (i + 1).to_s %>) <%= resource.name %></h4>
-					<span><%= resource.type.name %> for <%= resource.level.name %> Mages</span>
 					<p><%= resource.description %></p>	
 				</div>
 			</a>
